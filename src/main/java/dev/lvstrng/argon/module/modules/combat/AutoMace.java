@@ -29,7 +29,7 @@ public final class AutoMace extends Module {
     private final BooleanSetting stunSlam = new BooleanSetting("Stun Slam", false);
     private final BooleanSetting autoSwitch = new BooleanSetting("Auto Switch Mace", true);
 
-    private final TimerUtil attackTimer = new TimerUtil();
+    private final TimerUtil attackTimer = new TimerUtils();
     private int savedSlot = -1;
     private double fallStartY = -1;
     private boolean isFalling = false;
