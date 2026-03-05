@@ -1,6 +1,6 @@
 package dev.lvstrng.argon.module.module.modules.combat;
 
-import dev.lvstrng.argon.event.events.ickEvent;
+import dev.lvstrng.argon.event.events.TickEvent;
 import dev.lvstrng.argon.mixin.MinecraftClientAccessor;
 import dev.lvstrng.argon.module.Category;
 import dev.lvstrng.argon.module.Module;
