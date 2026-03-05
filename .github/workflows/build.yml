@@ -3,10 +3,11 @@ name: Build with Gradle
 on:
   push:
     branches:
-      - main
+      - '**'          # orice branch
   pull_request:
     branches:
-      - main
+      - '**'
+  workflow_dispatch:   # rulare manuală din Actions
 
 jobs:
   build:
@@ -17,12 +18,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Set up JDK 21 using Temurin
+      # Set up JDK 21
       - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
           java-version: '21'
-          distribution: 'temurin'  # Corrected distribution name
+          distribution: 'temurin'
 
       # Ensure gradlew is executable
       - name: Make gradlew executable
@@ -40,3 +41,10 @@ jobs:
       # Build with Gradle
       - name: Build with Gradle
         run: ./gradlew build
+
+      # Save built JAR as artifact
+      - name: Upload JAR
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-jar
+          path: build/libs/*.jar
