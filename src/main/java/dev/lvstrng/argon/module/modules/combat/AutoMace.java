@@ -8,7 +8,7 @@ import dev.lvstrng.argon.module.modules.misc.Teams;
 import dev.lvstrng.argon.module.setting.BooleanSetting;
 import dev.lvstrng.argon.module.setting.NumberSetting;
 import dev.lvstrng.argon.managers.FriendManager;
-import dev.lvstrng.argon.utils.TimerUtil;
+import dev.lvstrng.argon.utils.TimerUtils;
 import meteordevelopment.orbit.EventHandler;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
