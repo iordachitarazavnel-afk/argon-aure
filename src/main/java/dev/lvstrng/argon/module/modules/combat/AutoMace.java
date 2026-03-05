@@ -9,7 +9,7 @@ import dev.lvstrng.argon.module.setting.BooleanSetting;
 import dev.lvstrng.argon.module.setting.NumberSetting;
 import dev.lvstrng.argon.managers.FriendManager;
 import dev.lvstrng.argon.utils.TimerUtils;
-import meteordevelopment.orbit.EventHandler;
+import dev.lvstrng.argon.meteordevelopment.orbit.EventHandler;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Tameable;
